@@ -7,5 +7,7 @@ export * from "./configureRepository.ts";
 export * from "./getBranch.ts";
 export * from "./getOrCreateRepository.ts";
 export * from "./listBranches.ts";
+export * from "./loadOctokit.ts";
+export * from "./sources.helpers.ts";
 export * from "./tryGetRepository.ts";
 export * from "./types.ts";

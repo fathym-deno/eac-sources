@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "exports": {
     ".": "./src/sources/.exports.ts",
+    "./steward/plugins": "./src/steward/plugins/.exports.ts",
     "./utils": "./src/utils/.exports.ts"
   },
   "tasks": {
