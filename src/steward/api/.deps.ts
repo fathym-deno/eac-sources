@@ -10,12 +10,14 @@ export type {
   EaCActuatorResponse,
 } from "jsr:@fathym/eac@0.2.31/steward/actuators";
 
-export type { EverythingAsCodeClouds } from "jsr:@fathym/eac-azure@0.0.19";
+export type { EverythingAsCodeClouds } from "jsr:@fathym/eac-azure@0.0.20";
 export {
   eacGetSecrets,
   loadSecretClient,
-} from "jsr:@fathym/eac-azure@0.0.19/utils";
+} from "jsr:@fathym/eac-azure@0.0.20/utils";
+
 export type { EverythingAsCodeGitHub } from "jsr:@fathym/eac-github@0.0.6";
+
 export type {
   EaCGitHubAppProviderDetails,
   EverythingAsCodeIdentity,
