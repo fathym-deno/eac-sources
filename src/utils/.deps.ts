@@ -15,30 +15,30 @@ export type {
   EaCMetadataBase,
   EaCModuleActuator,
   EverythingAsCode,
-} from "jsr:@fathym/eac@0.2.28";
-export { callEaCActuatorConnections } from "jsr:@fathym/eac@0.2.28/steward/utils";
+} from "jsr:@fathym/eac@0.2.31";
+export { callEaCActuatorConnections } from "jsr:@fathym/eac@0.2.31/steward/utils";
 
 export {
   type EverythingAsCodeClouds,
   isEverythingAsCodeClouds,
-} from "jsr:@fathym/eac-azure@0.0.12";
+} from "jsr:@fathym/eac-azure@0.0.19";
 export {
   eacGetSecrets,
   loadMainSecretClient,
   loadSecretClient,
-} from "jsr:@fathym/eac-azure@0.0.12/utils";
+} from "jsr:@fathym/eac-azure@0.0.19/utils";
 
 export {
   type EaCGitHubAppAsCode,
   type EaCGitHubAppDetails,
   isEaCGitHubAppAsCode,
   isEaCGitHubAppDetails,
-} from "jsr:@fathym/eac-github@0.0.4";
+} from "jsr:@fathym/eac-github@0.0.6";
 
 export {
   type EaCGitHubAppProviderDetails,
   isEaCGitHubAppProviderDetails,
-} from "jsr:@fathym/eac-identity@0.0.4";
+} from "jsr:@fathym/eac-identity@0.0.5";
 
 export {
   createAppAuth,
