@@ -16,9 +16,7 @@ export default class EaCSourceConnectionsStewardPlugin
   constructor(protected options?: EaCSourceConnectionsStewardPluginOptions) {}
 
   public Setup(_config: EaCRuntimeConfig): Promise<EaCRuntimePluginConfig> {
-    const stewardApiMetaPath = import.meta.resolve(
-      "../steward/api/connections",
-    );
+    const stewardApiMetaPath = import.meta.resolve("../api/source-connections");
 
     const pluginConfig: EaCRuntimePluginConfig<
       EverythingAsCode & EverythingAsCodeApplications & EverythingAsCodeDenoKV

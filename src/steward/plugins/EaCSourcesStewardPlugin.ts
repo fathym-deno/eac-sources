@@ -15,7 +15,7 @@ export default class EaCSourcesStewardPlugin implements EaCRuntimePlugin {
   constructor(protected options?: EaCSourcesStewardPluginOptions) {}
 
   public Setup(_config: EaCRuntimeConfig): Promise<EaCRuntimePluginConfig> {
-    const stewardApiMetaPath = import.meta.resolve("../steward/api/sources");
+    const stewardApiMetaPath = import.meta.resolve("../api/sources");
 
     const pluginConfig: EaCRuntimePluginConfig<
       EverythingAsCode & EverythingAsCodeApplications & EverythingAsCodeDenoKV
@@ -25,7 +25,7 @@ export default class EaCSourcesStewardPlugin implements EaCRuntimePlugin {
       "core",
       "steward-sources",
       "fathym:eac-sources/steward/api/sources",
-      "/api/steward/source-connections*",
+      "/api/steward/sources*",
       "@fathym/eac-sources",
       this.options ?? {},
       "/src/steward/api/sources/",

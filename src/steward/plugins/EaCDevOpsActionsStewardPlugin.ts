@@ -15,9 +15,7 @@ export default class EaCSourcesStewardPlugin implements EaCRuntimePlugin {
   constructor(protected options?: EaCSourcesStewardPluginOptions) {}
 
   public Setup(_config: EaCRuntimeConfig): Promise<EaCRuntimePluginConfig> {
-    const stewardApiMetaPath = import.meta.resolve(
-      "../steward/api/devops-actions",
-    );
+    const stewardApiMetaPath = import.meta.resolve("../api/devops-actions");
 
     const pluginConfig: EaCRuntimePluginConfig<
       EverythingAsCode & EverythingAsCodeApplications & EverythingAsCodeDenoKV
