@@ -1,20 +1,20 @@
 export { delay } from "jsr:@std/async@1.0.8/delay";
 
-export type { EverythingAsCode } from "jsr:@fathym/eac@0.2.94";
-export type { EaCRuntimeHandlers } from "jsr:@fathym/eac@0.2.94/runtime/pipelines";
+export type { EverythingAsCode } from "jsr:@fathym/eac@0.2.96";
+export type { EaCRuntimeHandlers } from "jsr:@fathym/eac@0.2.96/runtime/pipelines";
 export type {
   EaCActuatorConnectionsRequest,
   EaCActuatorConnectionsResponse,
   EaCActuatorErrorResponse,
   EaCActuatorRequest,
   EaCActuatorResponse,
-} from "jsr:@fathym/eac@0.2.94/steward/actuators";
+} from "jsr:@fathym/eac@0.2.96/steward/actuators";
 
-export type { EverythingAsCodeClouds } from "jsr:@fathym/eac-azure@0.0.50";
+export type { EverythingAsCodeClouds } from "jsr:@fathym/eac-azure@0.0.55";
 export {
   eacGetSecrets,
   loadSecretClient,
-} from "jsr:@fathym/eac-azure@0.0.50/utils";
+} from "jsr:@fathym/eac-azure@0.0.55/utils";
 
 export type { EverythingAsCodeGitHub } from "jsr:@fathym/eac-github@0.0.12";
 
