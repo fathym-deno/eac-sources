@@ -10,7 +10,7 @@ export type ContentFile = components["schemas"]["content-file"];
 
 export type Installation = components["schemas"]["installation"];
 
-export type Organization = components["schemas"]["organization"];
+export type Organization = components["schemas"]["organization-full"];
 
 export type RepositoryCreateInOrgParameters =
   RestEndpointMethodTypes["repos"]["createInOrg"]["parameters"];
