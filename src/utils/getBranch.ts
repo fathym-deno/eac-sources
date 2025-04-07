@@ -22,5 +22,5 @@ export async function getBranch(
     branch: branchName,
   });
 
-  return branchResp.data;
+  return branchResp.data as unknown as Branch;
 }
