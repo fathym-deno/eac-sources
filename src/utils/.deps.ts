@@ -6,18 +6,18 @@ export type {
   EaCMetadataBase,
   EaCModuleActuator,
   EverythingAsCode,
-} from "jsr:@fathym/eac@0.2.106";
-export { callEaCActuatorConnections } from "jsr:@fathym/eac@0.2.106/steward/utils";
+} from "jsr:@fathym/eac@0.2.113";
+export { callEaCActuatorConnections } from "jsr:@fathym/eac@0.2.113/steward/utils";
 
 export {
   type EverythingAsCodeClouds,
   isEverythingAsCodeClouds,
-} from "jsr:@fathym/eac-azure@0.0.60";
+} from "jsr:@fathym/eac-azure@0.0.90";
 export {
   eacGetSecrets,
   loadMainSecretClient,
   loadSecretClient,
-} from "jsr:@fathym/eac-azure@0.0.60/utils";
+} from "jsr:@fathym/eac-azure@0.0.90/utils";
 
 export {
   type EaCGitHubAppAsCode,
