@@ -6,30 +6,30 @@ export type {
   EaCMetadataBase,
   EaCModuleActuator,
   EverythingAsCode,
-} from "jsr:@fathym/eac@0.2.119";
-export { callEaCActuatorConnections } from "jsr:@fathym/eac@0.2.119/steward/utils";
+} from "jsr:@fathym/eac@0.2.120";
+export { callEaCActuatorConnections } from "jsr:@fathym/eac@0.2.120/steward/utils";
 
 export {
   type EverythingAsCodeClouds,
   isEverythingAsCodeClouds,
-} from "jsr:@fathym/eac-azure@0.0.105";
+} from "jsr:@fathym/eac-azure@0.0.106";
 export {
   eacGetSecrets,
   loadMainSecretClient,
   loadSecretClient,
-} from "jsr:@fathym/eac-azure@0.0.105/utils";
+} from "jsr:@fathym/eac-azure@0.0.106/utils";
 
 export {
   type EaCGitHubAppAsCode,
   type EaCGitHubAppDetails,
   isEaCGitHubAppAsCode,
   isEaCGitHubAppDetails,
-} from "jsr:@fathym/eac-github@0.0.17";
+} from "jsr:@fathym/eac-github@0.0.18";
 
 export {
   type EaCGitHubAppProviderDetails,
   isEaCGitHubAppProviderDetails,
-} from "jsr:@fathym/eac-identity@0.0.22";
+} from "jsr:@fathym/eac-identity@0.0.25";
 
 export * from "npm:octokit@4.1.2";
 export { type OctokitOptions } from "npm:@octokit/core@6.1.4";
