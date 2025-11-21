@@ -1,4 +1,13 @@
-import { buildStewardApiPluginConfig, EaCRuntimeConfig, EaCRuntimePlugin, EaCRuntimePluginConfig, EaCStewardPluginOptions, EverythingAsCode, EverythingAsCodeApplications, EverythingAsCodeDenoKV } from "./.deps.ts";
+import {
+  buildStewardApiPluginConfig,
+  EaCRuntimeConfig,
+  EaCRuntimePlugin,
+  EaCRuntimePluginConfig,
+  EaCStewardPluginOptions,
+  EverythingAsCode,
+  EverythingAsCodeApplications,
+  EverythingAsCodeDenoKV,
+} from "./.deps.ts";
 
 export type EaCSourcesStewardPluginOptions = EaCStewardPluginOptions;
 

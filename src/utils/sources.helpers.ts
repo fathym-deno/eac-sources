@@ -1,4 +1,19 @@
-import { base64, Buffer, eacGetSecrets, EaCGitHubAppProviderDetails, EaCSourceActionType, EaCSourceAsCode, EaCSourceConnectionAsCode, EverythingAsCode, EverythingAsCodeClouds, EverythingAsCodeSources, Handlebars, loadSecretClient, Logger, sodium } from "./.deps.ts";
+import {
+  base64,
+  Buffer,
+  eacGetSecrets,
+  EaCGitHubAppProviderDetails,
+  EaCSourceActionType,
+  EaCSourceAsCode,
+  EaCSourceConnectionAsCode,
+  EverythingAsCode,
+  EverythingAsCodeClouds,
+  EverythingAsCodeSources,
+  Handlebars,
+  loadSecretClient,
+  Logger,
+  sodium,
+} from "./.deps.ts";
 import { configureRepository } from "./configureRepository.ts";
 import { getOrCreateRepository } from "./getOrCreateRepository.ts";
 import { loadOctokit } from "./loadOctokit.ts";
@@ -28,7 +43,9 @@ export async function ensureSource(
 
     switch (action) {
       case "fork": {
-        const org = source.Details!.Organization === source.Details!.Username ? undefined : source.Details!.Organization!;
+        const org = source.Details!.Organization === source.Details!.Username
+          ? undefined
+          : source.Details!.Organization!;
 
         const _forkResp = await octokit.rest.repos.createFork({
           owner: organizationName,

@@ -1,4 +1,23 @@
-import { delay, EaCActuatorErrorResponse, EaCActuatorRequest, EaCActuatorResponse, eacGetSecrets, EaCGitHubAppProviderDetails, EaCRuntimeHandlers, EaCSourceActionType, EaCSourceAsCode, ensureSource, ensureSourceArtifacts, ensureSourceSecrets, EverythingAsCode, EverythingAsCodeClouds, EverythingAsCodeGitHub, EverythingAsCodeIdentity, EverythingAsCodeSources, loadSecretClient } from "../.deps.ts";
+import {
+  delay,
+  EaCActuatorErrorResponse,
+  EaCActuatorRequest,
+  EaCActuatorResponse,
+  eacGetSecrets,
+  EaCGitHubAppProviderDetails,
+  EaCRuntimeHandlers,
+  EaCSourceActionType,
+  EaCSourceAsCode,
+  ensureSource,
+  ensureSourceArtifacts,
+  ensureSourceSecrets,
+  EverythingAsCode,
+  EverythingAsCodeClouds,
+  EverythingAsCodeGitHub,
+  EverythingAsCodeIdentity,
+  EverythingAsCodeSources,
+  loadSecretClient,
+} from "../.deps.ts";
 
 export default {
   async POST(req, ctx) {
@@ -42,9 +61,11 @@ export default {
           ).Username!}`
         ];
 
-        const gitHubApp = parentEaC.GitHubApps![sourceConnection.GitHubAppLookup!];
+        const gitHubApp =
+          parentEaC.GitHubApps![sourceConnection.GitHubAppLookup!];
 
-        const provider = parentEaC.Providers![gitHubApp.Details!.ProviderLookup];
+        const provider =
+          parentEaC.Providers![gitHubApp.Details!.ProviderLookup];
 
         const details = provider.Details! as EaCGitHubAppProviderDetails;
 
@@ -75,7 +96,9 @@ export default {
             action,
           );
 
-          sourceLookup = `${source.Details!.Type}://${source.Details!.Organization}/${source.Details!.Repository}`;
+          sourceLookup = `${source.Details!.Type}://${
+            source.Details!.Organization
+          }/${source.Details!.Repository}`;
 
           await delay(5000);
         }

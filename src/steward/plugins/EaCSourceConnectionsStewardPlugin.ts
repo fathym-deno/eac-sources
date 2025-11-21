@@ -1,8 +1,18 @@
-import { buildStewardApiPluginConfig, EaCRuntimeConfig, EaCRuntimePlugin, EaCRuntimePluginConfig, EaCStewardPluginOptions, EverythingAsCode, EverythingAsCodeApplications, EverythingAsCodeDenoKV } from "./.deps.ts";
+import {
+  buildStewardApiPluginConfig,
+  EaCRuntimeConfig,
+  EaCRuntimePlugin,
+  EaCRuntimePluginConfig,
+  EaCStewardPluginOptions,
+  EverythingAsCode,
+  EverythingAsCodeApplications,
+  EverythingAsCodeDenoKV,
+} from "./.deps.ts";
 
 export type EaCSourceConnectionsStewardPluginOptions = EaCStewardPluginOptions;
 
-export default class EaCSourceConnectionsStewardPlugin implements EaCRuntimePlugin {
+export default class EaCSourceConnectionsStewardPlugin
+  implements EaCRuntimePlugin {
   constructor(protected options?: EaCSourceConnectionsStewardPluginOptions) {}
 
   public Setup(_config: EaCRuntimeConfig): Promise<EaCRuntimePluginConfig> {

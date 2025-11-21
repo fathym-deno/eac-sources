@@ -1,4 +1,9 @@
-import { EaCActuatorRequest, EaCActuatorResponse, EaCDevOpsActionAsCode, EaCRuntimeHandlers } from "../.deps.ts";
+import {
+  EaCActuatorRequest,
+  EaCActuatorResponse,
+  EaCDevOpsActionAsCode,
+  EaCRuntimeHandlers,
+} from "../.deps.ts";
 
 export default {
   async POST(req, ctx) {

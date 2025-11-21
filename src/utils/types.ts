@@ -12,9 +12,11 @@ export type Installation = components["schemas"]["installation"];
 
 export type Organization = components["schemas"]["organization-full"];
 
-export type RepositoryCreateInOrgParameters = RestEndpointMethodTypes["repos"]["createInOrg"]["parameters"];
+export type RepositoryCreateInOrgParameters =
+  RestEndpointMethodTypes["repos"]["createInOrg"]["parameters"];
 
-export type RepositoryCreateForAuthenticatedUserParameters = RestEndpointMethodTypes["repos"]["createInOrg"]["parameters"];
+export type RepositoryCreateForAuthenticatedUserParameters =
+  RestEndpointMethodTypes["repos"]["createInOrg"]["parameters"];
 
 export type NewRepository =
   | RepositoryCreateInOrgParameters
