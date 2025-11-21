@@ -1,4 +1,5 @@
-import { EaCSourceDetails, Octokit } from "./.deps.ts";
+import { EaCSourceDetails } from "../sources/EaCSourceDetails.ts";
+import { Octokit } from "./.deps.ts";
 import { configureBranchProtection } from "./configureBranchProtection.ts";
 import { getBranch } from "./getBranch.ts";
 import { listBranches } from "./listBranches.ts";

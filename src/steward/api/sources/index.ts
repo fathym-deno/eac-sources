@@ -6,18 +6,20 @@ import {
   eacGetSecrets,
   EaCGitHubAppProviderDetails,
   EaCRuntimeHandlers,
-  EaCSourceActionType,
-  EaCSourceAsCode,
-  ensureSource,
-  ensureSourceArtifacts,
-  ensureSourceSecrets,
   EverythingAsCode,
   EverythingAsCodeClouds,
   EverythingAsCodeGitHub,
   EverythingAsCodeIdentity,
-  EverythingAsCodeSources,
   loadSecretClient,
 } from "../.deps.ts";
+import { EaCSourceActionType } from "../../../sources/EaCSourceActionType.ts";
+import { EaCSourceAsCode } from "../../../sources/EaCSourceAsCode.ts";
+import { EverythingAsCodeSources } from "../../../sources/EverythingAsCodeSources.ts";
+import {
+  ensureSource,
+  ensureSourceArtifacts,
+  ensureSourceSecrets,
+} from "../../../utils/sources.helpers.ts";
 
 export default {
   async POST(req, ctx) {
@@ -132,7 +134,9 @@ export default {
         Model: source,
       } as EaCActuatorResponse);
     } catch (err) {
-      logger.Package.error("There was an error setting up the sources", err);
+      logger.Package.error("There was an error setting up the sources", {
+        err,
+      });
 
       return Response.json({
         HasError: true,

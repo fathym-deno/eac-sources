@@ -4,12 +4,10 @@ import {
   EaCGitHubAppAsCode,
   EaCGitHubAppDetails,
   EaCGitHubAppProviderDetails,
-  EaCSourceConnectionDetails,
   EverythingAsCodeClouds,
   isEaCGitHubAppAsCode,
   isEaCGitHubAppDetails,
   isEaCGitHubAppProviderDetails,
-  isEaCSourceConnectionDetails,
   isEverythingAsCodeClouds,
   loadMainSecretClient,
   loadSecretClient,
@@ -17,6 +15,10 @@ import {
   OctokitOptions,
   SecretClient,
 } from "./.deps.ts";
+import {
+  EaCSourceConnectionDetails,
+  isEaCSourceConnectionDetails,
+} from "../sources/EaCSourceConnectionDetails.ts";
 
 export const EaCOctokit = Octokit; //.plugin(paginateGraphql);
 

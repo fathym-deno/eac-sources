@@ -3,17 +3,17 @@ import {
   Buffer,
   eacGetSecrets,
   EaCGitHubAppProviderDetails,
-  EaCSourceActionType,
-  EaCSourceAsCode,
-  EaCSourceConnectionAsCode,
   EverythingAsCode,
   EverythingAsCodeClouds,
-  EverythingAsCodeSources,
   Handlebars,
   loadSecretClient,
-  Logger,
   sodium,
+  TelemetryLogger,
 } from "./.deps.ts";
+import { EaCSourceActionType } from "../sources/EaCSourceActionType.ts";
+import { EaCSourceAsCode } from "../sources/EaCSourceAsCode.ts";
+import { EaCSourceConnectionAsCode } from "../sources/EaCSourceConnectionAsCode.ts";
+import { EverythingAsCodeSources } from "../sources/EverythingAsCodeSources.ts";
 import { configureRepository } from "./configureRepository.ts";
 import { getOrCreateRepository } from "./getOrCreateRepository.ts";
 import { loadOctokit } from "./loadOctokit.ts";
@@ -99,7 +99,7 @@ export async function ensureSource(
 }
 
 export async function ensureSourceArtifacts(
-  logger: Logger,
+  logger: TelemetryLogger,
   eac: EverythingAsCodeSources & EverythingAsCode,
   providerDetails: EaCGitHubAppProviderDetails,
   connection: EaCSourceConnectionAsCode,
@@ -164,10 +164,9 @@ export async function ensureSourceArtifacts(
 
         sha = file.sha;
       } catch (err) {
-        logger.error(
-          "There was an error loading the github workflow action",
+        logger.error("There was an error loading the github workflow action", {
           err,
-        );
+        });
       }
 
       await octokit.rest.repos.createOrUpdateFileContents({

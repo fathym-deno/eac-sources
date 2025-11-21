@@ -1,5 +1,6 @@
 // deno-lint-ignore-file no-explicit-any
-import { EaCSourceDetails, Octokit } from "./.deps.ts";
+import { EaCSourceDetails } from "../sources/EaCSourceDetails.ts";
+import { Octokit } from "./.deps.ts";
 import { tryGetRepository } from "./tryGetRepository.ts";
 import { NewRepository, Repository } from "./types.ts";
 

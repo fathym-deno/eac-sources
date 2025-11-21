@@ -4,16 +4,16 @@ import {
   eacGetSecrets,
   EaCGitHubAppProviderDetails,
   EaCRuntimeHandlers,
-  EaCSourceConnectionAsCode,
   EverythingAsCode,
   EverythingAsCodeClouds,
   EverythingAsCodeGitHub,
   EverythingAsCodeIdentity,
-  EverythingAsCodeSources,
-  loadOctokit,
   loadSecretClient,
-  SimpleUser,
 } from "../.deps.ts";
+import { EaCSourceConnectionAsCode } from "../../../sources/EaCSourceConnectionAsCode.ts";
+import { EverythingAsCodeSources } from "../../../sources/EverythingAsCodeSources.ts";
+import { loadOctokit } from "../../../utils/loadOctokit.ts";
+import { SimpleUser } from "../../../utils/types.ts";
 
 export default {
   async POST(req, ctx) {
