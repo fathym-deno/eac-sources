@@ -14,12 +14,12 @@ export type {
   EaCApplicationAsCode,
   EaCProjectAsCode,
   EverythingAsCodeApplications,
-} from "jsr:@fathym/eac-applications@0.0.242-mcp-processor";
-export type { EaCAPIProcessor } from "jsr:@fathym/eac-applications@0.0.242-mcp-processor/processors";
+} from "jsr:@fathym/eac-applications@0.0.243-mcp-processor";
+export type { EaCAPIProcessor } from "jsr:@fathym/eac-applications@0.0.243-mcp-processor/processors";
 export {
   buildStewardApiPluginConfig,
   type EaCStewardPluginOptions,
-} from "jsr:@fathym/eac-applications@0.0.242-mcp-processor/steward/plugins";
+} from "jsr:@fathym/eac-applications@0.0.243-mcp-processor/steward/plugins";
 
 export type { EverythingAsCodeDenoKV } from "jsr:@fathym/eac-deno-kv@0.0.29-integration";
 
