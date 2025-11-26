@@ -1,7 +1,7 @@
 export { delay } from "jsr:@std/async@1.0.10/delay";
 export * as base64 from "jsr:@std/encoding@1.0.7/base64";
 
-export type { TelemetryLogger } from "jsr:@fathym/common@0.2.292-integration-integration/telemetry";
+export type { TelemetryLogger } from "jsr:@fathym/common@0.2.297-integration/telemetry";
 
 export type {
   EaCMetadataBase,
