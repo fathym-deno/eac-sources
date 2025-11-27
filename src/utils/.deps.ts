@@ -13,12 +13,12 @@ export { callEaCActuatorConnections } from "jsr:@fathym/eac@0.2.147-hmis/steward
 export {
   type EverythingAsCodeClouds,
   isEverythingAsCodeClouds,
-} from "jsr:@fathym/eac-azure@0.0.135-hmis";
+} from "jsr:@fathym/eac-azure@0.0.136-hmis";
 export {
   eacGetSecrets,
   loadMainSecretClient,
   loadSecretClient,
-} from "jsr:@fathym/eac-azure@0.0.135-hmis/utils";
+} from "jsr:@fathym/eac-azure@0.0.136-hmis/utils";
 
 export {
   type EaCGitHubAppAsCode,
