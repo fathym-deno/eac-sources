@@ -7,8 +7,8 @@ export type {
   EaCMetadataBase,
   EaCModuleActuator,
   EverythingAsCode,
-} from "jsr:@fathym/eac@0.2.148-hmis";
-export { callEaCActuatorConnections } from "jsr:@fathym/eac@0.2.148-hmis/steward/utils";
+} from "jsr:@fathym/eac@0.2.153-hmis";
+export { callEaCActuatorConnections } from "jsr:@fathym/eac@0.2.153-hmis/steward/utils";
 
 export {
   type EverythingAsCodeClouds,
@@ -30,7 +30,7 @@ export {
 export {
   type EaCGitHubAppProviderDetails,
   isEaCGitHubAppProviderDetails,
-} from "jsr:@fathym/eac-identity@0.0.35-integration";
+} from "jsr:@fathym/eac-identity@0.0.36-integration";
 
 export * from "npm:octokit@4.1.2";
 export { type OctokitOptions } from "npm:@octokit/core@6.1.4";
