@@ -30,19 +30,13 @@ Guardrails for humans and AI working on source/artifact/DevOps EaC modules.
 
 ## Core Guardrails
 
-1. **Stay scoped.** Keep work under `projects/everything-as-code/eac-sources/`
-   unless coordinating with another pod; link cross-pod dependencies.
-2. **Frontmatter required.** All docs include frontmatter and relative
-   references back to parent guides.
-3. **API stability.** Avoid breaking source/action model contracts silently;
-   document breaking changes and add migration notes for consumers.
-4. **Provenance.** Capture provider/API version assumptions and release pins in
-   `UPSTREAM.md` when publishing; prefer upstream-first fixes before diverging.
-5. **Security & data handling.** Do not embed secrets or tokens in docs/tests;
-   document required permissions clearly.
+1. **Stay scoped.** Keep work under `projects/everything-as-code/eac-sources/` unless coordinating with another pod; link cross-pod dependencies.
+2. **Frontmatter required.** All docs include frontmatter and relative references back to parent guides.
+3. **API stability.** Avoid breaking source/action model contracts silently; document breaking changes and add migration notes for consumers.
+4. **Provenance.** Capture provider/API version assumptions and release pins in `UPSTREAM.md` when publishing; prefer upstream-first fixes before diverging.
+5. **Security & data handling.** Do not embed secrets or tokens in docs/tests; document required permissions clearly.
 
 ## Communication
 
-- Declare intent before editing; summarize outcomes and next steps in the
-  project README or a short log.
+- Declare intent before editing; summarize outcomes and next steps in the project README or a short log.
 - Link consumer pods when behavior changes to keep dependencies aligned.
